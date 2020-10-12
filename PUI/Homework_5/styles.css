@@ -130,7 +130,6 @@ body {
     height: 639px;
     width: 100%;
     background-size: cover;
-    background-position: relative;
     background-repeat: no-repeat;
 }
 .intro-description {
@@ -190,10 +189,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-.images {
-    position: center;
-}
-
 
 .original-wrapper{
     width: 274px;
