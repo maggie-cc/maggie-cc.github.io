@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Original Cinnamon Roll</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner-title">
+            <a href="index.html">Bun Bun Bake Shop</a>
+        </div>
+        
+        <div class="nav-wrapper">
+
+            <div class="home-wrapper">
+                <a href="index.html">home</a>
+            </div>
+            
+            <div class="shop-wrapper">
+                <a href="products.html">shop</a>
+            </div>
+
+            <input id="searchbar" onkeyup="search_product()" type="text"
+            name="search" placeholder="Search..."> 
+    
+            <div class="cart">
+                <a href="cart.html">my cart</a>
+            </div>
+
+            <div class="contact">
+                <a href="contact.html">contact</a>
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="continue-shopping">  
+                <a href="products.html"> Go back</a>
+            </div>
+
+            <div class="two-column-wrapper">
+                
+                <div class="original-image-wrapper">
+                    <img class="left-arrow" src="images/left-arrow.png"alt="Scroll left">
+                    <img class=original-image src="images/original.jpg">
+                    <img class="right-arrow" src="images/right-arrow.png"alt="Scroll right">
+                </div>
+
+                <div class="product-detail-wrapper">
+                    <h1>Original Cinnamon Roll</h1>
+                    <h2>$3.00          450kcal</h2>
+                    <p>One of our all time favorites. Grab your coffe, wrap yourself in a cozy blanket like a crazy burrito, and enjoy these delicious cinnamon buns!</p> 
+                    <div class= "dropdown">
+                        <span> Glaze </span>
+                        <div class="dropdown-glaze">
+                            <p>None</p>
+                            <p>Sugar Milk</p>
+                            <p> Vanilla Milk</p> 
+                            <p>Double Chocolate</p>
+                        </div>
+                    </div>
+
+                    <div class="quantity">
+                        <div>1pc</div>
+                        <div>3pc</div>
+                        <div>6pc</div>
+                        <div>12pc</div>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <a href="add-to-cart.html">Add to cart</a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

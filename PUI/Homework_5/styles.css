@@ -1,0 +1,368 @@
+/* Master styles */
+body {
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+.nav-wrapper {
+    display:flex;
+    justify-content: space-between;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 96px;
+    padding-bottom: 10px;
+    background-color: #FFD4B6;
+}
+
+.nav-wrapper > div {
+    margin-right: 20px;
+    font-size: 1.25em;
+    text-transform: lowercase;
+
+}
+.banner-title {
+    padding-top: 66px;
+    text-align: center;
+    height: 22px;
+    background-color: #FFD4B6;
+    position: relative;
+    letter-spacing: 1.5px;
+    font-family: "Nunito", sans-serif;
+
+}
+.banner-title a {
+    font-size: 67px;
+    color: #E18700;
+    text-decoration: none;
+}
+
+.home-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.home-wrapper a {
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.home-wrapper:hover {
+    border-bottom: 1px solid #005585;
+}
+.home-wrapper a:hover {
+    color: #005585;
+}
+
+.shop-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.shop-wrapper a {
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.shop-wrapper:hover {
+    border-bottom: 1px solid #005585;
+}
+.shop-wrapper a:hover {
+    color: #005585;
+}
+
+#searchbar {
+    border-radius: 10px;
+    border: 1px solid #6B6767;
+}
+
+.cart {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.cart a {
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.cart:hover {
+    border-bottom: 1px solid #005585;
+}
+.cart a:hover {
+    color: #005585;
+}
+
+.contact {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.contact a{
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.contact:hover{
+    border-bottom: 1px solid #005585;
+}
+.contact a:hover{
+    color: #005585;
+}
+
+/* Intro styles */
+.intro-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+.img-background {
+    height: 639px;
+    width: 100%;
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+}
+.intro-description {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 255px;
+    bottom: 264px;
+    left: 500px;
+    right: 500px;
+    line-height: 27px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 23px;
+    font-weight: 770;
+
+    color:#FFFFFF;
+}
+.shop-now {
+    position: absolute;
+    width: 500px;
+    left: 507px;
+    top: 430px;
+    text-align: center;
+    line-height: 77px;
+    display: inline-block;
+    background-color: #FFE1B5;
+    border: 5px solid #FFFFFF;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 770;
+}
+.shop-now a {
+    color: white;
+    text-decoration: none;
+}
+
+.shop-now:hover {
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #E18700;
+    color: white;
+}
+.shop-now a:hover {
+    color: #FFFFFF;
+}
+
+
+/* Products Style */
+
+.products-wrapper {
+    display: grid;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    grid-gap:80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.images {
+    position: center;
+}
+
+
+.original-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.blackberry-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.walnut-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.gf-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.pumpkin-spice-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.caramel-pecan-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.label {
+    text-align: center;
+    color: #005585;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
+
+/* Product Detail */
+
+.continue-shopping {
+    padding-left: 3%;
+    padding-top: 3%;
+}
+.continue-shopping a{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.continue-shopping a {
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.continue-shopping:hover {
+    border-bottom: 1px dotted #005585;
+}
+.continue-shopping a:hover {
+    color: #005585;
+}
+
+.original-image {
+    width: 520px;
+    height: 500px;
+    padding-left: 10%;
+    padding-right: 19%;
+
+}
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    margin-top: 70px;
+    grid-gap:70px; 
+}
+
+.product-detail-wrapper h1 {
+    color: #005585;
+}
+
+.product-detail-wrapper h2 {
+    font-weight: lighter;
+    font-size: 15.5px;
+    word-spacing: 3cm;
+}
+
+.product-detail-wrapper p {
+    line-height: 1.3;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+.dropdown-glaze {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-glaze {
+    display: block;
+    border: 1px solid #005585;
+}
+
+.dropdown-glaze p{
+    line-height: 1.15px;
+}
+
+.quantity{
+    display: flex;
+    padding-top: 15px;
+    margin-top: 1.5em;
+    justify-content: space-between;
+
+}
+
+
+.add-to-cart a{
+    margin-top: 4.5em;
+    text-align: center;
+    width: 350px;
+    height: 77px;
+    left: 650px;
+    top: 430px;
+    line-height: 70px;
+    text-decoration: none;
+    color: #005585;
+    background-color: #FFB951;
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.left-arrow {
+
+    width: 61px;
+    height: 61px;
+    left: 145.53px;
+    top: 681.46px;
+    float:right;
+    padding-top: 11%;
+
+    position: absolute;
+    top:120px;
+    left: 0px;
+
+}
+
+.right-arrow {
+    width: 61px;
+    height: 61px;
+    left: 100px;
+    top: 600px;
+    float:right;
+    padding-top: 11%;
+
+    position: absolute;
+    top:120px;
+    left: 600px;
+}
+
+
