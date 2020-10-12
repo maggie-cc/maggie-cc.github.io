@@ -262,7 +262,7 @@ body {
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 900px;
+    max-width: 80vw;
     position: relative;
     margin: auto;
     margin-top: 70px;
