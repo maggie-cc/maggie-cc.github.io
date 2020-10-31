@@ -1,0 +1,572 @@
+/* Master styles */
+body {
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+.nav-wrapper {
+    display:flex;
+    justify-content: space-between;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 96px;
+    padding-bottom: 10px;
+    background-color: #FFD4B6;
+}
+
+.nav-wrapper > div {
+    margin-right: 20px;
+    font-size: 1em;
+    text-transform: lowercase;
+
+}
+.banner-title {
+    padding-top: 66px;
+    text-align: center;
+    height: 22px;
+    background-color: #FFD4B6;
+    position: relative;
+    letter-spacing: 1.5px;
+    font-family: "Nunito", sans-serif;
+
+}
+.banner-title a {
+    font-size: 67px;
+    color: #E18700;
+    text-decoration: none;
+}
+
+.home-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.home-wrapper a {
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.home-wrapper:hover {
+    border-bottom: 1px solid #005585;
+}
+.home-wrapper a:hover {
+    color: #005585;
+}
+
+.shop-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.shop-wrapper a {
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.shop-wrapper:hover {
+    border-bottom: 1px solid #005585;
+}
+.shop-wrapper a:hover {
+    color: #005585;
+}
+
+#searchbar {
+    border-radius: 10px;
+    border: 1px solid #6B6767;
+}
+
+#cartContainer {
+    display: flex;
+    flex-flow: row;
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+
+#cartContainer a {
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#cartContainer:hover {
+    border-bottom: 1px solid #005585;
+}
+#cartContainer a:hover {
+    color: #005585;
+}
+
+#cartCount {
+    font-size: 0.75em;
+    color: #005585;
+}
+
+
+.contact {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.contact a{
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.contact:hover{
+    border-bottom: 1px solid #005585;
+}
+.contact a:hover{
+    color: #005585;
+}
+
+/* Intro styles */
+.intro-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+.img-background {
+    height: 639px;
+    width: 100%;
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+}
+.intro-description {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 255px;
+    bottom: 264px;
+    left: 500px;
+    right: 500px;
+    line-height: 27px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 23px;
+    font-weight: 770;
+
+    color:#FFFFFF;
+}
+.shop-now {
+    position: absolute;
+    width: 500px;
+    left: 507px;
+    top: 430px;
+    text-align: center;
+    line-height: 77px;
+    display: inline-block;
+    background-color: #FFE1B5;
+    border: 5px solid #FFFFFF;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 770;
+}
+.shop-now a {
+    color: white;
+    text-decoration: none;
+}
+
+.shop-now:hover {
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #E18700;
+    color: white;
+}
+.shop-now a:hover {
+    color: #FFFFFF;
+}
+
+
+/* Products Style */
+
+.products-wrapper {
+    display: grid;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    grid-gap:80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.images {
+    position: center;
+}
+
+
+.original-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.blackberry-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.walnut-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.gf-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.pumpkin-spice-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.caramel-pecan-wrapper{
+    width: 274px;
+    height: 256px;
+}
+
+.label {
+    text-align: center;
+    color: #005585;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
+
+/* Product Detail */
+
+/* Go back tab */
+
+.continue-shopping {
+    padding-left: 3%;
+    padding-top: 3%;
+}
+.continue-shopping a{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    letter-spacing: 1.5px;
+}
+.continue-shopping a {
+    color: #005585;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.continue-shopping:hover {
+    border-bottom: 1px dotted #005585;
+}
+.continue-shopping a:hover {
+    color: #005585;
+}
+
+/* Details on original cinnamon bun */
+
+#original-image {
+    width: 490px;
+    height: 480px;
+    padding-left: 1em;
+}
+
+.two-column-wrapper {
+    display: grid;
+    max-width: 75vw;
+    position: relative;
+    margin: auto;
+    margin-top: 70px;
+    grid-gap:30px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.original-image-wrapper {
+    grid-column: 1 / span 2;
+    padding-left: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-detail-wrapper {
+    grid-column: 3 / span 2;
+    padding-left: 2.5em;
+}
+
+.product-detail-wrapper h1 {
+    color: #005585;
+}
+
+.product-detail-wrapper h2 {
+    font-weight: lighter;
+    font-size: 15.5px;
+    word-spacing: 3cm;
+}
+
+.product-detail-wrapper p {
+    line-height: 1.3;
+}
+
+
+#left-arrow {
+
+    width: 50px;
+    height: 50px;
+    left: 145.53px;
+    top: 681.46px;
+    float:right;
+    padding-top: 11%;
+    position: absolute;
+    top:120px;
+    left: 0px;
+
+}
+
+#right-arrow {
+    width: 50px;
+    height: 50px;
+    left: 100px;
+    top: 600px;
+    float:right;
+    padding-top: 11%;
+    position: absolute;
+    top:120px;
+    left: 570px;
+} 
+
+/* Glaze Dropdown for Original Flavor */ 
+
+#glazeType {
+    position: relative;
+    font-size: 16px;
+    border: dotted;
+    cursor: pointer;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+#glazeType:hover {background-color: #FFE1B5;}
+
+/*.dropdown-glaze.show {display: block;}
+
+.dropdown-glaze {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  */
+  
+/* Quantity Dropdown for Original Flavor */
+
+#originalQuantity {
+    position: relative;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border: dotted;
+    cursor: pointer;
+}
+
+/*
+#originalQuantity:hover, .quanDropbtn:focus {
+    background-color: #FFE1B5;
+}
+*/
+
+
+#originalQuantity:hover {background-color: #FFE1B5;}
+
+/*.dropdown-quantity.show {display: block;}
+
+.dropdown-quantity {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+*/
+  
+.addToCartnCheckOut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#addToCartButton {
+    margin-top: 3em;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    left: 650px;
+    top: 430px;
+    text-decoration: none;
+    color: #005585;
+    background-color:#FFE1B5;
+    font-size: 17px;
+    font-weight: bolder;
+    display: inline-block;
+    border-radius: 15px;
+    border-color: white;
+}
+
+#checkoutButton {
+    margin-top: 3em;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    left: 650px;
+    top: 430px;
+    text-decoration: none;
+    color: #005585;
+    background-color:#FFE1B5;
+    font-size: 17px;
+    font-weight: bolder;
+    display: inline-block;
+    border-radius: 15px;
+    border-color: white;
+}
+
+/* Add to Cart */
+
+
+.original-two-columnWrapper {
+    display: Grid;
+    max-width: 75vw;
+    position: relative;
+    margin: auto;
+    grid-gap: 30px;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 4.5em;
+}
+
+
+
+.leftPart-Wrapper {
+    grid-column: 1 / span 2;
+    padding-left: 3em;
+}
+
+.middlePart-Wrapper {
+    grid-column: 3 / span 1;
+    display: flex;
+    flex-direction: row;
+    padding-top: 9em;
+    padding-left: 1.5em;
+}
+
+.rightPart-Wrapper {
+    grid-column: 4 / span 2;
+}
+
+.original-image-cart {
+    width: 300px;
+    height: 295px;
+    padding: auto;
+}
+
+.leftPart-Wrapper h1 {
+    font-size: 2em;
+    color: #005585;
+    line-height: 3em;
+}
+
+.leftPart-Wrapper h2 {
+    font-size: 16px;
+    color: #005585;
+    font-weight: bolder;
+    line-height: 1.5em;
+}
+
+.quantity-original {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #005585;
+    font-weight: bolder;
+    line-height: 1.5em;
+}
+
+.Total-original{
+    padding-top: 2em;
+}
+
+.remove {
+    color: #6B6767;
+}
+
+.rightPart-Wrapper {
+    padding-left: 6em;
+    padding-top: 3em;
+}
+
+
+.rightPart-Wrapper p {
+    font-size: 17px;
+    color: #005585;
+    line-height: 3em;
+    font-weight: bold;
+}
+
+.rightPart-Wrapper h3 {
+    font-size: 16px;
+    color: #005585;
+    font-weight: bolder;
+    line-height: 1.5em;
+}
+
+.estimatedTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 4em;
+}
+
+.estimatedTotal h3{
+    font-size: 18px;
+    color: #005585;
+    font-weight: bolder;
+}
+
+
+.price-original {
+    font-size: 18px;
+    color: #005585;
+    font-weight: 770;
+}
+
+#ContinueCheckoutButton {
+    text-align: center;
+    margin-top: 1.5em;
+    width: 200px;
+    height: 40px;
+    left: 650px;
+    top: 430px;
+    text-decoration: none;
+    color: #005585;
+    background-color:#FFE1B5;
+    font-size: 15px;
+    font-weight: bolder;
+    display: inline-block;
+    border-radius: 15px;
+    border-color: white;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner-title">
+            <a href="index.html">Bun Bun Bake Shop</a>
+        </div>
+        
+        <div class="nav-wrapper">
+            <div class="home-wrapper">
+                <a href="index.html">home</a>
+            </div>
+            
+            <div class="shop-wrapper">
+                <a href="products.html">shop</a>
+            </div>
+
+            <div class="contact">
+                <a href="contact.html">contact</a>
+            </div>
+
+            <div id = "cartContainer">
+                <div><a href="add-to-cart.html">my cart</a></div>
+                <div id="cartCount">(0)</div>
+            </div>  
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="original-two-columnWrapper">
+
+                <div class="leftPart-Wrapper">
+                    <h1>My Cart</h1>
+
+                    <hr>
+
+                    <h2>Original Cinnamon Roll</h2>
+                    <h2>Glaze: None</h2>
+                    <div class="Total-original">
+                        <h2>Total: $3.00</h2>
+                    </div>
+
+                    <div class="quantity-original">
+                        <div>1pc</div>
+                        <div>3pc</div>
+                        <div>6pc</div>
+                        <div>12pc</div>
+                        <button class="remove-btn" type="button">Remove</button>
+                    </div>
+
+                </div>
+
+                <div class="middlePart-Wrapper">
+                    <div class="Original-ImageWrapper">
+                        <div><img class=original-image-cart src="images/original.jpg"></div>
+                    </div>
+                </div>
+
+                <div class="rightPart-Wrapper">
+                    <p>Order Summary</p>
+
+                    <hr> 
+
+                    <h3>Item Total: $3.00</h3>
+                    <h3>Handling & Shipping: TBD</h3>
+                    <h3>Tax: TBD</h3>
+                    <div class="estimatedTotal">
+                        <h3>Estimated Total: </h3>
+                        <div class="price-original">
+                            $3.00
+                        </div>
+                    </div>
+                    
+                    <!--continute checkout button-->
+                    <input type="button" id="ContinueCheckoutButton" value="Continue Check Out" onclick="location.href='orderConfirmation.html'">
+
+            
+                </div>
+                
+
+            
+            </div>
+            
+
+            
+
+            
+
+        </div>
+    </div>
+</body>
+</html>
