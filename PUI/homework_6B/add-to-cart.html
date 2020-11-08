@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="checkoutPageLoaded();">
+
+    <div class= "container" >
+        <div class="banner-title">
+            <a href="index.html">Bun Bun Bake Shop</a>
+        </div>
+        
+        <div class="nav-wrapper">
+            <div class="home-wrapper">
+                <a href="index.html">home</a>
+            </div>
+            
+            <div class="shop-wrapper">
+                <a href="products.html">shop</a>
+            </div>
+
+            <div class="contact">
+                <a href="contact.html">contact</a>
+            </div>
+
+            <div id = "cartContainer">
+                <div><a href="add-to-cart.html">my cart</a></div>
+                <div id="cartCount">(0)</div>
+            </div>  
+
+        </div>
+
+        <div class="productDetails-wrapper">
+            <div class="original-three-columnWrapper">
+
+                <div id="leftPartWrapper">
+                    <div class="continue-shopping">  
+                        <a href="products.html" > Go back</a>
+                    </div>
+                </div>
+               
+
+                <div id="listOfProducts">
+                    <h1>My Cart</h1>
+
+                    <hr>
+         
+
+                </div>
+
+                    
+
+                <div id="rightPartWrapper">
+                    <p>Order Summary</p>
+
+                    <hr> 
+            
+                    <h3>Handling & Shipping: TBD</h3>
+                    <h3>Tax: TBD</h3>
+
+                    <a id="ItemTotal"></a>
+
+                    
+                    <!--continute checkout button-->
+                    <input type="button" id="ContinueCheckoutButton" value="Continue Check Out" onclick="location.href='orderConfirmation.html'">
+
+            
+                </div>
+                
+
+            
+            </div>
+            
+
+            
+
+            
+
+        </div>
+    </div>
+</body>
+</html>
