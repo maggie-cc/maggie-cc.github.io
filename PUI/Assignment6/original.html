@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Original Cinnamon Roll</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner-title">
+            <a href="index.html">Bun Bun Bake Shop</a>
+        </div>
+        
+        <div class="nav-wrapper">
+
+            <div class="home-wrapper">
+                <a href="index.html">home</a>
+            </div>
+            
+            <div class="shop-wrapper">
+                <a href="products.html">shop</a>
+            </div>
+
+            <input id="searchbar" onkeyup="search_product()" type="text"
+            name="search" placeholder="Search...">         
+            
+            <!-- <div class="cart">
+                <a href="add-to-cart.html">my cart</a> 
+                <div id="cartCount">(0)</div>
+            </div> -->
+
+            <div class="contact">
+                <a href="contact.html">contact</a>
+            </div>
+
+            <div id = "cartContainer">
+                <div onclick= "goToCheckoutPage()">my cart</div>
+                <div id="cartCount">(0)</div>
+            </div>    
+
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="continue-shopping">  
+                <a href="products.html"> Go back</a>
+            </div>
+
+            <div class="two-column-wrapper">
+                
+                <div class="original-image-wrapper">
+                    <img id="left-arrow" src="images/left-arrow.png" alt="Scroll left" onclick="pressL()"/>
+                    <img id=original-image src="images/original.jpg" alt = "Original Flavored Cinnamon Bun">
+                    <img id="right-arrow" src="images/right-arrow.png" alt="Scroll right" onclick="pressR()" />
+                </div>
+
+                <div class="product-detail-wrapper">
+                    <h1>Original Cinnamon Roll</h1>
+                    <div id="originalPrice">$3.00</div>
+                    <h2>450kcal</h2>
+                    <p>One of our all time favorites. Grab your coffe, wrap yourself in a cozy blanket like a crazy burrito, and enjoy these delicious cinnamon buns!</p> 
+                    <!--select the type of glaze-->
+                    <select id="glazeType">
+                        <option value="None">None</option>
+                        <option value="SugarMilk">Sugar Milk</option>
+                        <option value="VanillaMilk">Vanilla Milk</option>
+                        <option value="DoubleChocolate">Double Chocolate</option>
+                    </select>
+
+                    <br /><br /><br />
+
+                    <!--select the quantity (original flavor)-->
+                    <select id="originalQuantity">
+                        <option value="1pc">1</option>
+                        <option value="3pc">3</option>
+                        <option value="6pc">6</option>
+                        <option value="12pc">12</option>
+                    </select>
+
+                    <div class="addToCartnCheckOut">
+                        <!--add to cart button-->
+                        <input type="button" id="addToCartButton" value="Add to Cart" onclick="addToCart()">
+                        <!--check out button-->
+                        <input type="button" id="checkoutButton" value="Check Out" onclick= "goToCheckoutPage()">
+                    </div>
+                    
+
+
+
+                    <!-- old dropdowns //"location.href='add-to-cart.html';
+                        onclick="location.href='add-to-cart.html'; goToCheckoutPage()">
+                        <div class= "dropdown">
+                        <button onclick="myFunctionGlaze()" class="dropbtn">Glaze</button>
+                        <div id="myDropdown" class="dropdown-glaze">
+                            <a href="#None">None</a>
+                            <a href="#SugarMilk">Sugar Milk</a>
+                            <a href="#VanillaMilk"> Vanilla Milk</a>
+                            <a href="#DoubleChocolate">Double Chocolate</a>
+                        </div>                        
+                    </div>
+
+                    <div class="quantity-dropdown">
+                        <button onclick="myFunction()" class="quanDropbtn">Quantity</button>
+                        <div id="OriQuantDropbtn" class="dropdown-quantity">
+                        <a href="#1pc">1pc</a>
+                        <a href="#3pc">3pc</a>
+                        <a href="6pc">6pc</a>
+                        <a href="12pc">12pc</a>
+                    </div>
+
+                    <div id="add-to-cart">
+                        <a href="add-to-cart.html">Add to cart</a>
+                    </div> -->
+
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

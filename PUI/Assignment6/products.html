@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner-title">
+            <a href="index.html">Bun Bun Bake Shop</a>
+        </div>
+        
+        <div class="nav-wrapper">
+            <div class="home-wrapper">
+                <a href="index.html">home</a>
+            </div>
+            
+            <div class="shop-wrapper">
+                <a href="products.html">shop</a>
+            </div>
+
+            <input id="searchbar" onkeyup="search_product()" type="text"
+            name="search" placeholder="Search..."> 
+
+            <div class="contact">
+                <a href="contact.html">contact</a>
+            </div>
+
+            <div id = "cartContainer">
+                <div><a href="add-to-cart.html">my cart</a></div>
+                <div id="cartCount">(0)</div>
+            </div>  
+
+        </div>
+  
+        
+        <!-- Product Images --> 
+        
+        <div class="products-wrapper">
+
+            <div class="images" style="cursor: default;">
+                <a href="original.html"><img class="original-wrapper" src="images/original.jpg" alt="Original"></a> 
+                <div class="label" style="cursor: default;">Original</div>
+            </div>
+     
+            <div class="images" style="cursor: default;">
+                <img class="blackberry-wrapper" src="images/Blackberry-.jpg" alt="Blackberry">
+                <div class="label" style="cursor: default;">Blackberry</div>
+            </div>
+            
+            <div class="images" style="cursor: default;">
+                <img class="walnut-wrapper" src="images/Walnuts.jpg" alt="Walnut">
+                <div class="label" style="cursor: default;">Walnut</div>
+            </div>
+
+            <div class="images" style="cursor:default;">
+                <img class="gf-wrapper" src="images/original_gf.jpg" alt="Original GF">
+                <div class="label" style="cursor: default;">Original (Gluten-free)</div>
+            </div>
+                
+            <div class="images" style="cursor:default;">
+                <img class="pumpkin-spice-wrapper" src="images/Pumpkin-Spice.jpg" alt="Pumpkin Spice">
+                <div class="label" style="cursor: default;">Pumpkin Spice</div>
+            </div>
+            
+            <div class="images" style="cursor:default;">
+                <img class="caramel-pecan-wrapper" src="images/Pecan-Sticky-Buns-5.jpg" alt="Caramel Pecan">
+                <div class="label" style="cursor: default;">Caramel Pecan</div>
+            </div>
+        
+
+        </div> 
+    </div>
+</body>
+</html>
