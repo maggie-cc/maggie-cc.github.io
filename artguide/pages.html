@@ -12,37 +12,42 @@
 <body id="page1">
 
     <div class="container">
+      <!--banner and navigation bar across all pages-->
       <div class="row">
         <header class="col-12 p-5">
         <h1><span class="lead">A Beginner’s Guide to</span> <br>
         <span  class="display-5">Twentieth Century Art before WWII</span></span>  </h1>
         <div class="d-flex flex-row">
           <span class="flex-fill"></span>
-          <a class="mr-5 text-dark" href="./">Home</a>
+          <a class="mr-5 text-dark" href="/">Home</a>
           <a class="text-dark" href="./pages.html">Learn</a>
         </div>
       </header>
       </div>
       
 
-       
+      
         <div id="carouselExampleControls" class="carousel slide mt-5"  data-ride="carousel">
+    <!--give an id to slides-->
     <div class="carousel-inner" id="slides">
       
      
     </div>
+    <!--left and right toggle buttons code from bootstrap-->
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
-    </div>
+</div>
   
   <script type="module">
+    //load in the array of pages
       import {pages} from './assets/js/javascript.js' 
-
+    //binding to the slides container 
       const slideContainer = $('#slides');
+    //template for a slide
       const template = (data) => `
             <div class="carousel-header-bar"></div>
             <div class="row mt-5">
@@ -68,14 +73,17 @@
     
 
       `;
-      
+      //iterate through pages
       pages.forEach((page,i) => {
+          //whether or not it is active
           const active = i > 0 ? '' : 'active';
           console.log(active, i);
+          //create a div container in JavaScript 
           const div = document.createElement('div');
+          //give the bootstrap classes for slide 
           div.className = "carousel-item px-5 "+ active;
           div.innerHTML = template(page)
-
+          //add slide node to slide container 
           slideContainer.append(div);
       })
 
@@ -84,7 +92,7 @@
             interval: 20000
         })
         
-    //carousel header bar animation
+    //carousel header bar animation, listen to the event fired when the slide transition happens 
     $('#carouselExampleControls').on('slide.bs.carousel', function (ev) {
         $('.carousel-header-bar').addClass('animate')
         setTimeout(()=> {
@@ -94,7 +102,7 @@
     })
  
       
-  </script>
+  </script> 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
