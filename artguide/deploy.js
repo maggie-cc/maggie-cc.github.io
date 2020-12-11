@@ -1,4 +1,5 @@
-const cheerio = require('cheerio');
+//create a thing that would create html files out of the ejs route 
+//translate ejs files into hard files
 const axios = require('axios');
 const fs = require('fs');
 
