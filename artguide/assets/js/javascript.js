@@ -1,19 +1,4 @@
-var introtext = "The 20th century opened new vistas and possibilities that expanded everyday human experience and greatly influenced the world of art and original painting. From the earliest years of the turn of the century, artists were beginning to experiment with subject matter, creating realities reflective more of their own inner visions than what lay before them in nature. Concurrent with this was a search for new techniques, materials, and approaches to support these forays into new terrains. Here are some of the major movements that defined and shaped art in the 20th century and which still influence the art being produced today."; 
-var i  = 0; 
 
-
-$("#readBtn").click(function(){
-    $(this).hide(); 
-    setInterval(function() {
-        var currentText = $("#specialtext").text(); 
-        $("#specialtext").text(currentText + introtext.charAt(i)); 
-        if (i  < intro.length){
-            i++; 
-        } 
-
-        
-    }, 75);
-} ); 
 
 
 //Name all the images for this site
@@ -197,42 +182,5 @@ var pages = [page2, page3, page4, page5, page6, page7, page8, page9, page10, pag
 
 export {
     pages
-}
-
-function loadPage(page_num){
-    if (page_num == 1) {
-        createHtml(page1)
-    }else {
-        // carousel 
-        for (var i = 0; i < pages.length; i++){
-            var page = pages[i]; 
-     
-            var captioncontent = $("<p>").text(page.caption);
-            var caption = $("<div>").attr("class", "carousel-caption").append(captioncontent); 
-            var image = $("<img>").attr("src", `./assets/images/${page.image}`).attr("width", "70%").attr("height", "70%");
-            var mainDiv = $("<div>").attr("class",  i == 0 ? "item active": "item").append(image, caption); 
-            $(".carousel-inner").append(mainDiv); 
-        }
-    }
-}
-
-function createHtml(page){
-    var v1 = $("<h2 >").attr("class", 'title-content').text(page.title); 
-    var v2 = $("<h3>").text(page.body);
-    var v3 = $("<p>").text(page.body2);
-    var v4 = $("<p>").text(page.caption);
-    $(".left-content").append(v1);
-    $("#bottomdiv").append(v4, v2, v3);
-}
-
-function createHtmlOtherPages(title, body, body2, caption){
-    
-}
-var currentId = $("body").attr("id"); 
-if (currentId == "page1"){
-    loadPage(1);
-    
-}else{
-    loadPage(2); 
 }
 
