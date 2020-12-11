@@ -1,20 +1,24 @@
 <div id="carouselExampleControls" class="carousel slide mt-5"  data-ride="carousel">
+    <!--give an id to slides-->
     <div class="carousel-inner" id="slides">
       
      
     </div>
+    <!--left and right toggle buttons code from bootstrap-->
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
-    </div>
+</div>
   
   <script type="module">
-      import {pages} from '/assets/js/javascript.js' 
-
+    //load in the array of pages
+      import {pages} from './assets/js/javascript.js' 
+    //binding to the slides container 
       const slideContainer = $('#slides');
+    //template for a slide
       const template = (data) => `
             <div class="carousel-header-bar"></div>
             <div class="row mt-5">
@@ -26,7 +30,7 @@
                 </div>
                 <div class="col-md-6">
                     <figure>
-                        <img src="assets/images/${data.image}" class="d-block w-100" alt="${data.title}">
+                        <img src="./assets/images/${data.image}" class="d-block w-100" alt="${data.title}">
                         <div class="float-right">
                             <figcaption class="blockquote-footer text-end">
                                 ${data.caption}
@@ -40,14 +44,17 @@
     
 
       `;
-      
+      //iterate through pages
       pages.forEach((page,i) => {
+          //whether or not it is active
           const active = i > 0 ? '' : 'active';
           console.log(active, i);
+          //create a div container in JavaScript 
           const div = document.createElement('div');
+          //give the bootstrap classes for slide 
           div.className = "carousel-item px-5 "+ active;
           div.innerHTML = template(page)
-
+          //add slide node to slide container 
           slideContainer.append(div);
       })
 
@@ -56,7 +63,7 @@
             interval: 20000
         })
         
-    //carousel header bar animation
+    //carousel header bar animation, listen to the event fired when the slide transition happens 
     $('#carouselExampleControls').on('slide.bs.carousel', function (ev) {
         $('.carousel-header-bar').addClass('animate')
         setTimeout(()=> {
