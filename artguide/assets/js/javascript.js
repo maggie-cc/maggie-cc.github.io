@@ -150,7 +150,7 @@ var page13 = {
     //Need to insert breaks before Subject Matter and Style, as well as bold Known Artists, Subject Matter and Style
     body2: "<b>Who:</b><br>André Breton, Salvador Dali, Paul Delvaux, Max Ernst, Joan Miro, Alberto Giacometti, Arshile Gorky, Frida Kahlo, René Magritte, André Masson, Man Ray, Yves Tanguy, Paul Klee, Giorgio de Chirico, Herbert Beyer, and Méret Oppenheim.<br><b>Subject Matter:</b><br>Everyday objects in absurd situations, often mixed with psychoanalytic thinking. Other works are non-objective.<br><b>Style:</b><br>Three main stylistic divisions of Surrealism are evident: Automatism, wherein the artist attempts to disengage conscious control in the creative act; Veristic, in which the style is very realistic and detailed although the subject matter appears irrational; and Assemblage, in which unrelated objects are juxtaposed in suggestion of an alternate reality.",
     //insert breaks
-    caption: "René Magritte, <i>Les valeurs personnelles</i> (<i>Personal Values</i>), 1952,<br>Oil on canvas,<br>80 x 100 cm (31 1/2 x 39 3/8 in.),<br>Musée Magritte Museum, Belgium",
+    caption: "René Magritte, <i>Les valeurs personnelles (Personal Values)</i>, 1952,<br>Oil on canvas,<br>80 x 100 cm (31 1/2 x 39 3/8 in.),<br>Musée Magritte Museum, Belgium",
     image: "11.jpg"
 }
 
