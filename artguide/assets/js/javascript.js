@@ -105,9 +105,9 @@ var page9 = {
     //insert a break after wartime
     body: "Dada was developed during World War I in Zurich as an avant-garde, anti-art movement. It rejected and mocked the capitalist and nationalistic cultural climate of World War I, focusing instead on the irrational, nonsensical and absurd with strong anti-bourgeois overtones. The movement spread throughout Europe and the United States, echoing far-left radical thought and the overall discontentment with the violence of wartime. Rumanian poet Tristan Tzara, along with a group of poets and painters, stuck a penknife in a French dictionary at random and it landed on 'dada,' which means 'hobbyhorse.' Having seen the horrors of 'modern' society in bringing about World War I, the Dadaists embraced irrational, intuitive, nihilistic, absurd and playful qualities; anything anti-modern and anti-rational. Dada has even been referred to as 'anti-art.' Dada isn't a style, but a world view.",
     //Need to insert breaks before Subject Matter and Style, as well as bold Known Artists, Subject Matter and Style
-    body2: "<b>Who:<b><br>Marcel Duchamp, Jean (Hans) Arp, Max Ernst, John Heartfield, Francis Picabia, Man Ray, and Kurt Schwitters.<br><b>Subject Matter:</b><br>Everyday objects placed in absurd combinations; found objects; abstract compositions.<br><b>Style:</b><br>Photomontages; collage; realism; abstraction; importance of chance.",
+    body2: "<b>Who:</b><br>Marcel Duchamp, Jean (Hans) Arp, Max Ernst, John Heartfield, Francis Picabia, Man Ray, and Kurt Schwitters.<br><b>Subject Matter:</b><br>Everyday objects placed in absurd combinations; found objects; abstract compositions.<br><b>Style:</b><br>Photomontages; collage; realism; abstraction; importance of chance.",
     //insert breaks
-    caption: "Marcel Duchamp, Fountain, 1917, replica 1964, Porcelain, 360 × 480 × 610 mm, Tate, London",
+    caption: "Marcel Duchamp, <i>Fountain</i>, 1917, replica 1964,<br>Porcelain,<br>360 × 480 × 610 mm,<br>Tate, London",
     image: "07.jpg"
 }
 
@@ -128,7 +128,7 @@ var page11 = {
     //Need to insert breaks before Subject Matter and Style, as well as bold Known Artists, Subject Matter and Style
     body2: "<b>Who:</b><br>Emil-Jacques Ruhlmann, Donald Deskey, René Lalique, and Timothy Pfleuger.<br><b>Subject Matter:</b><br>Stylized interiors, furniture, objects, and clothing.<br><b>Style:</b><br>Eclectic blend of fragmentation; angular ornamentation; simple, clean shapes, often with a “streamlined” look; ornament that is geometric or stylized from representational forms; and unusually varied, often expensive materials, which frequently include man-made substances (plastics, especially Bakelite; vita-glass; and ferroconcrete) in addition to natural ones (jade, silver, ivory, obsidian, chrome, and rock crystal).",
     //insert breaks
-    caption: "Chrysler Building, New York City, designed by William Van Alen, completed 1930",
+    caption: "Chrysler Building, New York City,<br>designed by William Van Alen,<br>completed 1930",
     image: "01.jpg"
 }
 
