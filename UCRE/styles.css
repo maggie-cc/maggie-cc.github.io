@@ -4,15 +4,11 @@ header {
 .title {
     color: #7794FC;
 }
-.summary{
-    padding-bottom: 11em;
-}
 .space{
     padding-bottom: 3em;;
 }
 .interactiveMode {
-    height: 375px;
-    padding-top: 5.5em;
+    height: 290px;
 }
 .media{
     padding-top: 1em;
@@ -25,4 +21,10 @@ header {
 }
 #mainpage {
     background-color: #F9F9F9;
+}
+.evidence{
+    padding-bottom: 2.5em;
+}
+.before{
+    padding-top: 8em;
 }
