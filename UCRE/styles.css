@@ -1,0 +1,28 @@
+header {
+    background-color:#FFE8E8;
+}
+.title {
+    color: #7794FC;
+}
+.summary{
+    padding-bottom: 11em;
+}
+.space{
+    padding-bottom: 3em;;
+}
+.interactiveMode {
+    height: 375px;
+    padding-top: 5.5em;
+}
+.media{
+    padding-top: 1em;
+}
+.home{
+    color: #6C6767 !important;
+}
+.team{
+    color:#B38FFF !important;
+}
+#mainpage {
+    background-color: #F9F9F9;
+}
